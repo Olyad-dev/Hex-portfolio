@@ -142,8 +142,16 @@ a.active:hover {
 }
 
 .marquee {
+    
+    min-width: 400%;
     animation: scroll 30s linear infinite;
 }
+
+.marquee > div {
+    gap: 2rem; 
+}
+
+.marquee:hover { animation-play-state: paused; }
 
 @keyframes scroll {
     0% {

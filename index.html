@@ -4,10 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Olyad Getnet's Full Stack Web Development Portfolio - Showcasing projects, skills, and experience in web development."
+    />
+
     <title>Olyad.G Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <script>
         tailwind.config = {
             theme: {
@@ -107,9 +118,7 @@
                     <div class="flex justify-center md:justify-start mb-6">
                         <div class="relative">
                             <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-primary glow-effect">
-                                <!-- Replace 'your-photo.jpg' with your actual photo path -->
-                                <img src="suit.png" alt="Profile Photo" class="w-full h-full object-cover"
-                                    onerror="this.src='https://via.placeholder.com/200x200/14b8a6/ffffff?text=Your+Photo'">
+                                <img src="suit.png" alt="Profile Photo" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute -bottom-2 -right-2 bg-primary text-white p-3 rounded-full">
                                 <i class="fas fa-code text-xl"></i>
@@ -122,10 +131,9 @@
                     <div class="text-2xl md:text-3xl text-slate-400">
                         <span id="typewriterText" class="typewriter inline-block"></span>
                     </div>
-                    <p class="text-lg text-slate-300 leading-relaxed">
-                        Crafting scalable, high-performance web applications with the MERN stack.
+                    <!-- <p class="text-lg text-slate-300 leading-relaxed">
                         Passionate about clean code, modern architecture, and delivering exceptional user experiences.
-                    </p>
+                    </p> -->
                     <div class="flex gap-4 pt-4">
                         <a href="documents/OlyadGetnetResume.pdf" target="_blank" rel="noreferrer"
                             class="bg-primary hover:bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold transition glow-effect">
@@ -173,19 +181,19 @@
                     Node.js and Express,
                     all backed by efficient MongoDB databases. I'm committed to writing clean, maintainable code and
                     staying current
-                    with the latest web technologies and best practices.
+                    with the latest web technologies and best practices. Most importantly, I'm constantly trying to learn new skills to improve myself and my work.
                 </p>
                 <div class="grid md:grid-cols-3 gap-6 mt-8">
                     <div class="text-center p-4 bg-slate-900 rounded-lg">
-                        <div class="text-3xl font-bold text-primary">50+</div>
+                        <div class="text-3xl font-bold text-primary">30+</div>
                         <div class="text-slate-400 mt-2">Projects Completed</div>
                     </div>
                     <div class="text-center p-4 bg-slate-900 rounded-lg">
-                        <div class="text-3xl font-bold text-primary">5+</div>
+                        <div class="text-3xl font-bold text-primary">2+</div>
                         <div class="text-slate-400 mt-2">Years Experience</div>
                     </div>
                     <div class="text-center p-4 bg-slate-900 rounded-lg">
-                        <div class="text-3xl font-bold text-primary">30+</div>
+                        <div class="text-3xl font-bold text-primary">20+</div>
                         <div class="text-slate-400 mt-2">Happy Clients</div>
                     </div>
                 </div>
@@ -204,58 +212,42 @@
             <!-- Infinite Scrolling Tech Ticker -->
             <div class="relative overflow-hidden bg-slate-800 rounded-xl py-8 border border-slate-700">
                 <div class="flex whitespace-nowrap marquee">
-                    <div class="flex items-center space-x-12 px-6">
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-node-js text-green-500 text-3xl"></i> Node.js</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-react text-cyan-400 text-3xl"></i> React</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-database text-green-600 text-3xl"></i> MongoDB</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-server text-slate-400 text-3xl"></i> Express</span>
-                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-js text-yellow-400 text-3xl"></i>
-                            JavaScript</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-code text-purple-400 text-3xl"></i> Redux</span>
-                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-lock text-red-400 text-3xl"></i>
-                            JWT</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-leaf text-green-500 text-3xl"></i> Mongoose</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-git-alt text-orange-500 text-3xl"></i> Git</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-docker text-blue-400 text-3xl"></i> Docker</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-aws text-orange-400 text-3xl"></i> AWS</span>
-                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-wind text-cyan-400 text-3xl"></i>
-                            Tailwind CSS</span>
-                    </div>
-                    <div class="flex items-center space-x-12 px-6">
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-node-js text-green-500 text-3xl"></i> Node.js</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-react text-cyan-400 text-3xl"></i> React</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-database text-green-600 text-3xl"></i> MongoDB</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-server text-slate-400 text-3xl"></i> Express</span>
-                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-js text-yellow-400 text-3xl"></i>
-                            JavaScript</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-code text-purple-400 text-3xl"></i> Redux</span>
-                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-lock text-red-400 text-3xl"></i>
-                            JWT</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fas fa-leaf text-green-500 text-3xl"></i> Mongoose</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-git-alt text-orange-500 text-3xl"></i> Git</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-docker text-blue-400 text-3xl"></i> Docker</span>
-                        <span class="flex items-center gap-3 text-lg"><i
-                                class="fab fa-aws text-orange-400 text-3xl"></i> AWS</span>
-                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-wind text-cyan-400 text-3xl"></i>
-                            Tailwind CSS</span>
-                    </div>
+                        <div class="flex items-center space-x-12 px-6">
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-node-js text-green-500 text-3xl"></i> Node.js</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-react text-cyan-400 text-3xl"></i> React</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-server text-slate-400 text-3xl"></i> Express</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-js text-yellow-400 text-3xl"></i> JavaScript</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-lock text-red-400 text-3xl"></i> JWT</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-git-alt text-orange-500 text-3xl"></i> Git</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-wind text-cyan-400 text-3xl"></i> Tailwind CSS</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-database text-green-600 text-3xl"></i> MySQL</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-wordpress text-blue-700 text-3xl"></i> WordPress</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-store text-green-400 text-3xl"></i> Shopify</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-bootstrap text-purple-400 text-3xl"></i> Bootstrap</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-code text-slate-400 text-3xl"></i> VS Code</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-paper-plane text-orange-400 text-3xl"></i> Postman</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-html5 text-red-500 text-3xl"></i> HTML</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-css3-alt text-blue-500 text-3xl"></i> CSS</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-code text-yellow-400 text-3xl"></i> jQuery</span>
+                        </div>
+                        <div class="flex items-center space-x-12 px-6">
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-node-js text-green-500 text-3xl"></i> Node.js</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-react text-cyan-400 text-3xl"></i> React</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-server text-slate-400 text-3xl"></i> Express</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-js text-yellow-400 text-3xl"></i> JavaScript</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-lock text-red-400 text-3xl"></i> JWT</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-git-alt text-orange-500 text-3xl"></i> Git</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-wind text-cyan-400 text-3xl"></i> Tailwind CSS</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-database text-green-600 text-3xl"></i> MySQL</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-paper-plane text-orange-400 text-3xl"></i> Postman</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-code text-slate-400 text-3xl"></i> VS Code</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-html5 text-red-500 text-3xl"></i> HTML</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-css3-alt text-blue-500 text-3xl"></i> CSS</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-bootstrap text-purple-400 text-3xl"></i> Bootstrap</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-code text-yellow-400 text-3xl"></i> jQuery</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fab fa-wordpress text-blue-700 text-3xl"></i> WordPress</span>
+                        <span class="flex items-center gap-3 text-lg"><i class="fas fa-store text-green-400 text-3xl"></i> Shopify</span>
+                        </div>
                 </div>
             </div>
         </div>
@@ -709,10 +701,12 @@
                             <textarea name="message" required rows="4"
                                 class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition"></textarea>
                         </div>
-                        <button type="submit"
+                        <!-- <button type="submit"
                             class="w-full bg-primary hover:bg-teal-600 text-white py-3 rounded-lg font-semibold transition glow-effect">
                             Send Message
-                        </button>
+                        </button> -->
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-teal-600 text-white py-3 rounded-lg font-semibold transition glow-effect"><a href="mailto:olayidgetinet@gmail.com"></a>Send Message</button>
                     </form>
                 </div>
 
@@ -724,7 +718,7 @@
                         </div>
                         <div>
                             <h3 class="font-semibold mb-1">Email</h3>
-                            <p class="text-slate-400">alex.morgan@example.com</p>
+                            <p class="text-slate-400"><a href="mailto:olayidgetinet@gmail.com">olayidgetinet@gmail.com</a></p>
                         </div>
                     </div>
 
@@ -734,25 +728,20 @@
                         </div>
                         <div>
                             <h3 class="font-semibold mb-1">Location</h3>
-                            <p class="text-slate-400">San Francisco, CA</p>
+                            <p class="text-slate-400">Addis Ababa, Ethiopia</p>
                         </div>
                     </div>
 
                     <div class="glass-effect p-6 rounded-xl">
                         <h3 class="font-semibold mb-4">Connect With Me</h3>
                         <div class="flex gap-4">
-                            <a href="#" class="bg-slate-900 hover:bg-primary p-3 rounded-lg transition">
+                            <a href="https://github.com/Olyad-dev/" target="_blank" class="bg-slate-900 hover:bg-primary p-3 rounded-lg transition">
                                 <i class="fab fa-github text-2xl"></i>
                             </a>
-                            <a href="#" class="bg-slate-900 hover:bg-primary p-3 rounded-lg transition">
+                            <a href="https://www.linkedin.com/in/olyad-getnet"
+                      target="_blank" class="bg-slate-900 hover:bg-primary p-3 rounded-lg transition">
                                 <i class="fab fa-linkedin text-2xl"></i>
-                            </a>
-                            <a href="#" class="bg-slate-900 hover:bg-primary p-3 rounded-lg transition">
-                                <i class="fab fa-twitter text-2xl"></i>
-                            </a>
-                            <a href="#" class="bg-slate-900 hover:bg-primary p-3 rounded-lg transition">
-                                <i class="fab fa-codepen text-2xl"></i>
-                            </a>
+                            </a>   
                         </div>
                     </div>
                 </div>
@@ -791,6 +780,8 @@
     </div>
 
     <script src="script.js"></script>
+    <!-- EmailJS SDK: replace with your EmailJS user ID in script.js -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
 </body>
 
 </html>
