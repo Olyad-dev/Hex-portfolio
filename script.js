@@ -188,7 +188,7 @@ codeLines.forEach((line) => {
 });
 
 // Project Filtering
-const filterButtons = document.querySelectorAll(".filter-btn");
+const filterButtons = document.querySelectorAll(".filter-btn");sear
 const projectCards = document.querySelectorAll(".project-card");
 
 filterButtons.forEach((button) => {
