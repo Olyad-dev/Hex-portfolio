@@ -350,8 +350,7 @@ commandPalette.addEventListener("click", (e) => {
 // Contact Form - EmailJS integration
 const contactForm = document.getElementById("contactForm");
 
-// Please sign up at https://www.emailjs.com/ and create a service + template.
-// Then replace the placeholders below with your real EmailJS user ID, service ID and template ID.
+
 const EMAILJS_USER_ID = "oL9IyzNy9oD4BJz82"; // e.g. user_xxx
 const EMAILJS_SERVICE_ID = "service_mvhxni8"; // e.g. service_xxx
 const EMAILJS_TEMPLATE_ID = "template_58z9uxc"; // e.g. template_xxx
