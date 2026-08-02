@@ -28,7 +28,7 @@ mobileMenuLinks.forEach((link) => {
 
 // Mobile search button
 const commandPaletteBtnMobile = document.getElementById(
-  "commandPaletteBtnMobile"
+  "commandPaletteBtnMobile",
 );
 if (commandPaletteBtnMobile) {
   commandPaletteBtnMobile.addEventListener("click", () => {
@@ -188,7 +188,7 @@ codeLines.forEach((line) => {
 });
 
 // Project Filtering
-const filterButtons = document.querySelectorAll(".filter-btn");sear
+const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
 filterButtons.forEach((button) => {
@@ -205,9 +205,11 @@ filterButtons.forEach((button) => {
 
     // Filter projects
     projectCards.forEach((card) => {
-      const category = card.getAttribute("data-category");
+      const categories = (card.getAttribute("data-category") || "")
+        .split(/\s+/)
+        .filter(Boolean);
 
-      if (filter === "all" || category === filter) {
+      if (filter === "all" || categories.includes(filter)) {
         card.classList.remove("hidden-project");
         card.style.opacity = "0";
         setTimeout(() => {
@@ -298,7 +300,7 @@ function closeCommandPaletteModal() {
 
 function updateCommandResults(query) {
   const filtered = commands.filter((cmd) =>
-    cmd.name.toLowerCase().includes(query.toLowerCase())
+    cmd.name.toLowerCase().includes(query.toLowerCase()),
   );
 
   commandResults.innerHTML = filtered
@@ -308,7 +310,7 @@ function updateCommandResults(query) {
             <i class="${cmd.icon} text-primary"></i>
             <span>${cmd.name}</span>
         </div>
-    `
+    `,
     )
     .join("");
 
@@ -349,7 +351,6 @@ commandPalette.addEventListener("click", (e) => {
 
 // Contact Form - EmailJS integration
 const contactForm = document.getElementById("contactForm");
-
 
 const EMAILJS_USER_ID = "oL9IyzNy9oD4BJz82"; // e.g. user_xxx
 const EMAILJS_SERVICE_ID = "service_mvhxni8"; // e.g. service_xxx
@@ -393,9 +394,9 @@ contactForm.addEventListener("submit", (e) => {
       (error) => {
         console.error("EmailJS error:", error);
         alert(
-          "Sorry, something went wrong sending your message. Please try again later."
+          "Sorry, something went wrong sending your message. Please try again later.",
         );
-      }
+      },
     );
     return;
   }
@@ -403,7 +404,7 @@ contactForm.addEventListener("submit", (e) => {
   // Fallback: open user's email client with mailto (best-effort)
   const subject = encodeURIComponent("New message from portfolio contact form");
   const body = encodeURIComponent(
-    `Name: ${params.from_name}\nEmail: ${params.from_email}\n\nMessage:\n${params.message}`
+    `Name: ${params.from_name}\nEmail: ${params.from_email}\n\nMessage:\n${params.message}`,
   );
   const mailtoLink = `mailto:olayidgetinet@gmail.com?subject=${subject}&body=${body}`;
   window.location.href = mailtoLink;

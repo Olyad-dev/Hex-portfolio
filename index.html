@@ -12,7 +12,7 @@
     <title>Olyad.G Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -24,8 +24,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#14b8a6',
-                        secondary: '#06b6d4',
+                        primary: '#8b5cf6',
+                        secondary: '#a78bfa',
                     }
                 }
             }
@@ -35,7 +35,7 @@
 
 
 
-<body class="bg-slate-900 text-slate-100 overflow-x-hidden">
+<body class="bg-[#0f172a] text-[#f8fafc] overflow-x-hidden">
 
     <!-- Navigation -->
     <nav class="s-header__nav a fixed top-0 w-full z-50 glass-effect">
@@ -117,8 +117,8 @@
                     <!-- Profile Photo -->
                     <div class="flex justify-center md:justify-start mb-6">
                         <div class="relative">
-                            <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-primary glow-effect">
-                                <img src="images/suit.png" alt="Profile Photo" class="w-full h-full object-cover">
+                            <div class="w-47 h-48 rounded-full overflow-hidden border-4 border-primary glow-effect">
+                                <img src="images/photo_2025-10-17_16-15-24.jpg" alt="Profile Photo" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute -bottom-2 -right-2 bg-primary text-white p-3 rounded-full">
                                 <i class="fas fa-code text-xl"></i>
@@ -498,23 +498,23 @@
                     All Projects
                 </button>
                 <button class="filter-btn bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-lg font-semibold transition"
-                    data-filter="mern">
-                    MERN Stack
+                    data-filter="fullstack">
+                    Full Stack
                 </button>
                 <button class="filter-btn bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-lg font-semibold transition"
                     data-filter="frontend">
                     Frontend
                 </button>
                 <button class="filter-btn bg-slate-800 hover:bg-slate-700 px-6 py-2 rounded-lg font-semibold transition"
-                    data-filter="backend">
-                    Backend
+                    data-filter="api">
+                    API
                 </button>
             </div>
 
             <!-- Projects Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
                 <!-- Project 1 -->
-                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="mern">
+                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="fullstack">
                     <div class="h-48 bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
                         <img src="images/projects/abe garage.png" alt="amazon" class="w-full h-48 object-cover">
                     </div>
@@ -538,8 +538,35 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="mern">
+                 <!-- Project 2 -->
+                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="fullstack api">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                        <img src="images/projects/digital menu.png" alt="amazon" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Digital Menu</h3>
+                        <p class="text-slate-400 mb-4">Full-stack web application designed to help restaurants digitize their dynamic dining menus. Built for speed and flexibility, the app replaces traditional paper menus with an interactive digital interface accessible instantly by scanning a QR code.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">API</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://mobilemenu.vercel.app/" target="_blank" class="text-primary hover:text-teal-400 transition flex items-center gap-2">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Olyad-dev/menu" target="_blank" class="text-primary hover:text-teal-400 transition flex items-center gap-2">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Project 3 -->
+                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="fullstack">
                     <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
                         <img src="images/projects/amazon.png" alt="amazon" class="w-full h-48 object-cover">
                     </div>
@@ -564,8 +591,34 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="backend">
+                <!-- Project 4 -->
+                 <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="frontend">
+                    <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
+                        <img src="images/projects/flappy bird.png" alt="amazon" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Flappy Bird Game</h3>
+                        <p class="text-slate-400 mb-4">A fully functional arcade clone of Flappy Bird engineered exclusively with core web technologies. Showcases mastery of vanilla JavaScript game loop architecture and real-time physics simulation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">Game Loop</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://flappybirdcloned.netlify.app/" target="_blank" class="text-primary hover:text-teal-400 transition flex items-center gap-2">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Olyad-dev/Flappy-bird" target="_blank" class="text-primary hover:text-teal-400 transition flex items-center gap-2">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 5 -->
+                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="frontend api">
                     <div class="h-48 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
                         <img src="images/projects/apl react.png" alt="amazon" class="w-full h-48 object-cover">
                     </div>
@@ -589,8 +642,8 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="frontend">
+                <!-- Project 6 -->
+                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="frontend api">
                     <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
                         <img src="images/projects/netflix.png" alt="amazon" class="w-full h-48 object-cover">
                     </div>
@@ -614,8 +667,8 @@
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="mern">
+                <!-- Project 7 -->
+                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="frontend">
                     <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
                         <img src="images/projects/apl bootstrap.png" alt="amazon" class="w-full h-48 object-cover">
                     </div>
@@ -639,30 +692,6 @@
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-card glass-effect rounded-xl overflow-hidden" data-category="frontend">
-                    <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
-                        <img src="images/projects/flappy bird.png" alt="amazon" class="w-full h-48 object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Flappy Bird Game</h3>
-                        <p class="text-slate-400 mb-4">A fully functional arcade clone of Flappy Bird engineered exclusively with core web technologies. Showcases mastery of vanilla JavaScript game loop architecture and real-time physics simulation.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">HTML</span>
-                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">CSS</span>
-                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                            <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">Game Loop</span>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="https://flappybirdcloned.netlify.app/" target="_blank" class="text-primary hover:text-teal-400 transition flex items-center gap-2">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                            <a href="https://github.com/Olyad-dev/Flappy-bird" target="_blank" class="text-primary hover:text-teal-400 transition flex items-center gap-2">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -731,7 +760,7 @@
                         </div>
                         <div>
                             <h3 class="font-semibold mb-1">Contact</h3>
-                            <p class="text-slate-400"><a href="tel:+251955072179">+251 955 07 2179 / +251 947 22 9680</a></p>
+                            <p class="text-slate-400"><a href="tel:+251955072179">+251 955 07 2179 / +251 910 32 6581</a></p>
                         </div>
                         
                     </div>
@@ -778,13 +807,12 @@
                 </button>
             </div>
             <div id="commandResults" class="space-y-2 max-h-96 overflow-y-auto">
-                <!-- Results will be injected here -->
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
-    <!-- EmailJS SDK: replace with your EmailJS user ID in script.js -->
+    <script src="js/script.js"></script>
+    <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
 </body>
 
